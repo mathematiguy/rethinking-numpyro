@@ -5,3 +5,4 @@ daft
 ipython
 jupyter
 jupyterlab
+dvc

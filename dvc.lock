@@ -3,13 +3,25 @@ stages:
   16_generalized_linear_madness:
     cmd: jupyter nbconvert --execute --to html notebooks/16_generalized_linear_madness.ipynb
     deps:
+    - path: data/Boxes.csv
+      md5: 4654d5993d3b44cfd3d6993597c6e726
+      size: 6515
+    - path: data/Howell1.csv
+      md5: c0a0dee56bb6ebf12d5c09f347d961c7
+      size: 12205
+    - path: data/Lynx_Hare.csv
+      md5: 4c5d58c9e6b29024769b19ed5839d52d
+      size: 312
+    - path: data/Panda_nuts.csv
+      md5: 12f7ca0520a10a63cfed519203758c4b
+      size: 1961
     - path: notebooks/16_generalized_linear_madness.ipynb
       md5: 11a07f59c6c10fe78ab5557537e76287
       size: 1137314
     outs:
     - path: notebooks/16_generalized_linear_madness.html
-      md5: 4a825a81a5d3b6b502f0ac0399279638
-      size: 1970016
+      md5: 58e6b956dc356175f4591e9376937707
+      size: 1970015
   17_horoscopes:
     cmd: jupyter nbconvert --execute --to html notebooks/17_horoscopes.ipynb
     deps:
@@ -23,22 +35,34 @@ stages:
   08_conditional_manatees:
     cmd: jupyter nbconvert --execute --to html notebooks/08_conditional_manatees.ipynb
     deps:
+    - path: data/nettle.csv
+      md5: 94b375ae8eb7ba1720ee6f0b5a5eba46
+      size: 2925
+    - path: data/rugged.csv
+      md5: c303a3dc4aefb6ec65386ea902dda774
+      size: 50096
+    - path: data/tulips.csv
+      md5: a0b28c5b9d775bc6e930c29b2b3b1299
+      size: 358
     - path: notebooks/08_conditional_manatees.ipynb
       md5: 4896a67c2dcc4fc447983890691c1329
       size: 328915
     outs:
     - path: notebooks/08_conditional_manatees.html
-      md5: 543a6e8737b63e524b5a773369cd872c
+      md5: 4c2df6aefac3f755c3965b544ab82108
       size: 988654
   09_markov_chain_monte_carlo:
     cmd: jupyter nbconvert --execute --to html notebooks/09_markov_chain_monte_carlo.ipynb
     deps:
+    - path: data/rugged.csv
+      md5: c303a3dc4aefb6ec65386ea902dda774
+      size: 50096
     - path: notebooks/09_markov_chain_monte_carlo.ipynb
       md5: c062737e35de945396fe56797bffcf71
       size: 1549229
     outs:
     - path: notebooks/09_markov_chain_monte_carlo.html
-      md5: 7ba876fcb695e4eb552892e001d4db65
+      md5: cc50af81bcbaf2b4959ae07a9072803b
       size: 2465504
   02_small_worlds_and_large_worlds:
     cmd: jupyter nbconvert --execute --to html notebooks/02_small_worlds_and_large_worlds.ipynb
@@ -53,33 +77,75 @@ stages:
   12_monsters_and_mixtures:
     cmd: jupyter nbconvert --execute --to html notebooks/12_monsters_and_mixtures.ipynb
     deps:
+    - path: data/Hurricanes.csv
+      md5: 65e630916700254ecf385cacc2d10b42
+      size: 3366
+    - path: data/Kline.csv
+      md5: 01cc527e4840132212c7feb828cc8189
+      size: 293
+    - path: data/Trolley.csv
+      md5: 8e9092e52f2ea009fb4afe9cbfeceb7f
+      size: 587671
+    - path: data/UCBadmit.csv
+      md5: 5bbfd9ed822f7976619671760883b6a7
+      size: 387
     - path: notebooks/12_monsters_and_mixtures.ipynb
       md5: 50d128cba761cfbc98f934d33ded7f42
       size: 2153699
     outs:
     - path: notebooks/12_monsters_and_mixtures.html
-      md5: 27ceab160351ed63d295e14c5457215a
-      size: 3088392
+      md5: 6f6dc561ceecc603afae5951639f0119
+      size: 3088390
   13_models_with_memory:
     cmd: jupyter nbconvert --execute --to html notebooks/13_models_with_memory.ipynb
     deps:
+    - path: data/bangladesh.csv
+      md5: 97da4add56a95b1805117cbaad7d03dc
+      size: 38675
+    - path: data/chimpanzees.csv
+      md5: fb47419a6f084d4678eb40a4768c6ad4
+      size: 8848
+    - path: data/reedfrogs.csv
+      md5: f5d42e2eb4e5e4ca133c4b745a5f9bff
+      size: 1326
     - path: notebooks/13_models_with_memory.ipynb
       md5: ba0139f1309e19ad8cc9d4847313bc35
       size: 865200
     outs:
     - path: notebooks/13_models_with_memory.html
-      md5: c42376a88684a9edd7ebd990592b8643
+      md5: 5562e475084c028d450d346af90b5cb7
       size: 1938655
   14_adventures_in_covariance:
     cmd: jupyter nbconvert --execute --to html notebooks/14_adventures_in_covariance.ipynb
     deps:
+    - path: data/Kline2.csv
+      md5: b149ee46e29d0b3fc12aec8310b764d0
+      size: 723
+    - path: data/KosterLeckie.csv
+      md5: 252bbc1e586702f8ec4ccb71579c268c
+      size: 12415
+    - path: data/Primates301.csv
+      md5: 587fbc196fcd15bb72781c51e656506d
+      size: 28965
+    - path: data/Primates301_distance_matrix.csv
+      md5: b233b4493c88c81cd58526f68bfb6149
+      size: 948173
+    - path: data/Primates301_vcov_matrix.csv
+      md5: fc06f84b7de5b9f9915b4f1606d30d8e
+      size: 597467
+    - path: data/chimpanzees.csv
+      md5: fb47419a6f084d4678eb40a4768c6ad4
+      size: 8848
+    - path: data/islandsDistMatrix.csv
+      md5: 162b4630bc70d2bbc87ff4fa2b16d9ec
+      size: 747
     - path: notebooks/14_adventures_in_covariance.ipynb
       md5: 0ca0e248e618e5bf69dfd748d2bb97cd
       size: 3197555
     outs:
     - path: notebooks/14_adventures_in_covariance.html
-      md5: 640e4c3eebe6a8a65048bae8080b67dd
-      size: 4423216
+      md5: 4efe1998cd1792cb58ad7c07938b399e
+      size: 4422980
   15_missing_data_and_other_opportunities:
     cmd: jupyter nbconvert --execute --to html notebooks/15_missing_data_and_other_opportunities.ipynb
     deps:
@@ -105,12 +171,21 @@ stages:
   05_the_many_variables_and_the_spurious_waffles:
     cmd: jupyter nbconvert --execute --to html notebooks/05_the_many_variables_and_the_spurious_waffles.ipynb
     deps:
+    - path: data/Howell1.csv
+      md5: c0a0dee56bb6ebf12d5c09f347d961c7
+      size: 12205
+    - path: data/WaffleDivorce.csv
+      md5: 796ffd671ea1e059437fbd1e986786b2
+      size: 3189
+    - path: data/milk.csv
+      md5: 638ede869e5ff9a0b36eb5503bb27724
+      size: 1957
     - path: notebooks/05_the_many_variables_and_the_spurious_waffles.ipynb
       md5: 9b3aa40d4af8dff40da46b0e28deb76e
       size: 864232
     outs:
     - path: notebooks/05_the_many_variables_and_the_spurious_waffles.html
-      md5: a7cf260f3a8ebd04d1d28fca51f8d957
+      md5: 5ba449a976195a1000028ca6cb7e0922
       size: 1606035
   11_god_spiked_the_integers:
     cmd: jupyter nbconvert --execute --to html notebooks/11_god_spiked_the_integers.ipynb
@@ -134,16 +209,25 @@ stages:
   07_ulysses_compass:
     cmd: jupyter nbconvert --execute --to html notebooks/07_ulysses_compass.ipynb
     deps:
+    - path: data/WaffleDivorce.csv
+      md5: 796ffd671ea1e059437fbd1e986786b2
+      size: 3189
+    - path: data/cars.csv
+      md5: d0bd0cbdcec7c0ae9906ac3ba29879f9
+      size: 552
     - path: notebooks/07_ulysses_compass.ipynb
       md5: 8c6a0ac9291163942bf2c0b0dbbbe7b1
       size: 180852
     outs:
     - path: notebooks/07_ulysses_compass.html
-      md5: aad72fbafe913d023b9150bc915c6be1
+      md5: a67ad2c44eda99d20850678c1d9ff0ad
       size: 927821
   03_sampling_the_imaginary:
     cmd: jupyter nbconvert --execute --to html notebooks/03_sampling_the_imaginary.ipynb
     deps:
+    - path: data/homeworkch3.csv
+      md5: 5cecd635f3856eb09ec7bfe93b6ef2d9
+      size: 414
     - path: notebooks/03_sampling_the_imaginary.ipynb
       md5: c0a11e9825659d2918fd0ebcd0d6b89f
       size: 486878
@@ -154,12 +238,15 @@ stages:
   00_preface:
     cmd: jupyter nbconvert --execute --to html notebooks/00_preface.ipynb
     deps:
+    - path: data/cars.csv
+      md5: d0bd0cbdcec7c0ae9906ac3ba29879f9
+      size: 552
     - path: notebooks/00_preface.ipynb
       md5: 2e72d40ffb90152b9e0c220b7c7cd98c
       size: 28018
     outs:
     - path: notebooks/00_preface.html
-      md5: e5cebbd6572af33d53888fc352a834dd
+      md5: 9f04cd8e0ed5a7facc8c95dfdbda9526
       size: 612497
   01_the_golem_of_prague:
     cmd: jupyter nbconvert --execute --to html notebooks/01_the_golem_of_prague.ipynb

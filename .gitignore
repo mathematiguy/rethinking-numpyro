@@ -7,4 +7,4 @@ output
 .doit.db*
 site/pages/*.ipynb
 site/listings/*.py
-
+notebooks/*.html

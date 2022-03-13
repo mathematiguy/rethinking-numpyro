@@ -35,4 +35,4 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python${PYTHON_VERSION}
 
 RUN pip3 install --upgrade pip
 COPY requirements.txt /root/requirements.txt
-RUN pip3 install -r /root/requirements.txt
+RUN pip3 install --ignore-installed -r /root/requirements.txt
