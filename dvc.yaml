@@ -1,0 +1,148 @@
+stages:
+  00_preface:
+    cmd: jupyter nbconvert --execute --to html notebooks/00_preface.ipynb
+    deps:
+      - notebooks/00_preface.ipynb
+      - data/cars.csv
+    outs:
+      - notebooks/00_preface.html
+  01_the_golem_of_prague:
+    cmd: jupyter nbconvert --execute --to html notebooks/01_the_golem_of_prague.ipynb
+    deps:
+      - notebooks/01_the_golem_of_prague.ipynb
+    outs:
+      - notebooks/01_the_golem_of_prague.html
+  02_small_worlds_and_large_worlds:
+    cmd: jupyter nbconvert --execute --to html notebooks/02_small_worlds_and_large_worlds.ipynb
+    deps:
+      - notebooks/02_small_worlds_and_large_worlds.ipynb
+    outs:
+      - notebooks/02_small_worlds_and_large_worlds.html
+  03_sampling_the_imaginary:
+    cmd: jupyter nbconvert --execute --to html notebooks/03_sampling_the_imaginary.ipynb
+    deps:
+      - notebooks/03_sampling_the_imaginary.ipynb
+      - data/homeworkch3.csv
+    outs:
+      - notebooks/03_sampling_the_imaginary.html
+  04_geocentric_models:
+    cmd: jupyter nbconvert --execute --to html notebooks/04_geocentric_models.ipynb
+    deps:
+      - notebooks/04_geocentric_models.ipynb
+      - data/Howell1.csv
+      - data/cherry_blossoms.csv
+    outs:
+      - notebooks/04_geocentric_models.html
+  05_the_many_variables_and_the_spurious_waffles:
+    cmd: jupyter nbconvert --execute --to html notebooks/05_the_many_variables_and_the_spurious_waffles.ipynb
+    deps:
+      - notebooks/05_the_many_variables_and_the_spurious_waffles.ipynb
+      - data/WaffleDivorce.csv
+      - data/milk.csv
+      - data/Howell1.csv
+    outs:
+      - notebooks/05_the_many_variables_and_the_spurious_waffles.html
+  06_the_haunted_dag_and_the_causal_terror:
+    cmd: jupyter nbconvert --execute --to html notebooks/06_the_haunted_dag_and_the_causal_terror.ipynb
+    deps:
+      - notebooks/06_the_haunted_dag_and_the_causal_terror.ipynb
+      - data/milk.csv
+    outs:
+      - notebooks/06_the_haunted_dag_and_the_causal_terror.html
+  07_ulysses_compass:
+    cmd: jupyter nbconvert --execute --to html notebooks/07_ulysses_compass.ipynb
+    deps:
+      - notebooks/07_ulysses_compass.ipynb
+      - data/cars.csv
+      - data/WaffleDivorce.csv
+    outs:
+      - notebooks/07_ulysses_compass.html
+  08_conditional_manatees:
+    cmd: jupyter nbconvert --execute --to html notebooks/08_conditional_manatees.ipynb
+    deps:
+      - notebooks/08_conditional_manatees.ipynb
+      - data/rugged.csv
+      - data/tulips.csv
+      - data/nettle.csv
+    outs:
+      - notebooks/08_conditional_manatees.html
+  09_markov_chain_monte_carlo:
+    cmd: jupyter nbconvert --execute --to html notebooks/09_markov_chain_monte_carlo.ipynb
+    deps:
+      - notebooks/09_markov_chain_monte_carlo.ipynb
+      - data/rugged.csv
+    outs:
+      - notebooks/09_markov_chain_monte_carlo.html
+  10_big_entropy_and_the_generalized_linear_model:
+    cmd: jupyter nbconvert --execute --to html notebooks/10_big_entropy_and_the_generalized_linear_model.ipynb
+    deps:
+      - notebooks/10_big_entropy_and_the_generalized_linear_model.ipynb
+    outs:
+      - notebooks/10_big_entropy_and_the_generalized_linear_model.html
+  11_god_spiked_the_integers:
+    cmd: jupyter nbconvert --execute --to html notebooks/11_god_spiked_the_integers.ipynb
+    deps:
+      - notebooks/11_god_spiked_the_integers.ipynb
+      - data/chimpanzees.csv
+      - data/UCBadmit.csv
+      - data/Kline.csv
+    outs:
+      - notebooks/11_god_spiked_the_integers.html
+  12_monsters_and_mixtures:
+    cmd: jupyter nbconvert --execute --to html notebooks/12_monsters_and_mixtures.ipynb
+    deps:
+      - notebooks/12_monsters_and_mixtures.ipynb
+      - data/UCBadmit.csv
+      - data/Kline.csv
+      - data/Trolley.csv
+      - data/Hurricanes.csv
+    outs:
+      - notebooks/12_monsters_and_mixtures.html
+  13_models_with_memory:
+    cmd: jupyter nbconvert --execute --to html notebooks/13_models_with_memory.ipynb
+    deps:
+      - notebooks/13_models_with_memory.ipynb
+      - data/reedfrogs.csv
+      - data/chimpanzees.csv
+      - data/bangladesh.csv
+    outs:
+      - notebooks/13_models_with_memory.html
+  14_adventures_in_covariance:
+    cmd: jupyter nbconvert --execute --to html notebooks/14_adventures_in_covariance.ipynb
+    deps:
+      - notebooks/14_adventures_in_covariance.ipynb
+      - data/chimpanzees.csv
+      - data/KosterLeckie.csv
+      - data/islandsDistMatrix.csv
+      - data/Kline2.csv
+      - data/Primates301.csv
+      - data/Primates301_vcov_matrix.csv
+      - data/Primates301_distance_matrix.csv
+    outs:
+      - notebooks/14_adventures_in_covariance.html
+  15_missing_data_and_other_opportunities:
+    cmd: jupyter nbconvert --execute --to html notebooks/15_missing_data_and_other_opportunities.ipynb
+    deps:
+      - notebooks/15_missing_data_and_other_opportunities.ipynb
+      - data/WaffleDivorce.csv
+      - data/milk.csv
+      - data/Moralizing_gods.csv
+      - data/Primates301.csv
+    outs:
+      - notebooks/15_missing_data_and_other_opportunities.html
+  16_generalized_linear_madness:
+    cmd: jupyter nbconvert --execute --to html notebooks/16_generalized_linear_madness.ipynb
+    deps:
+      - notebooks/16_generalized_linear_madness.ipynb
+      - data/Howell1.csv
+      - data/Boxes.csv
+      - data/Panda_nuts.csv
+      - data/Lynx_Hare.csv
+    outs:
+      - notebooks/16_generalized_linear_madness.html
+  17_horoscopes:
+    cmd: jupyter nbconvert --execute --to html notebooks/17_horoscopes.ipynb
+    deps:
+      - notebooks/17_horoscopes.ipynb
+    outs:
+      - notebooks/17_horoscopes.html
