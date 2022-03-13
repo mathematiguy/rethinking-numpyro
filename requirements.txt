@@ -2,3 +2,6 @@ numpyro
 arviz
 causalgraphicalmodels
 daft
+ipython
+jupyter
+jupyterlab
